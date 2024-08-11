@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f5f5f5;
+            background-color: #f9f9f9;
             margin: 0;
             padding: 0;
             color: #333;
@@ -16,6 +16,10 @@
             background-color: #222;
             overflow: hidden;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
         }
         .navbar a {
             float: left;
@@ -30,6 +34,21 @@
         .navbar a:hover {
             background-color: #555;
         }
+        .container {
+            margin-top: 60px; /* Adjust for fixed navbar */
+        }
+        .banner {
+            text-align: center;
+            margin: 20px auto;
+            position: relative;
+        }
+        .banner img {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-bottom: 4px solid #e74c3c;
+            border-radius: 8px;
+        }
         .section-header {
             text-align: center;
             color: #e74c3c;
@@ -43,19 +62,15 @@
             border-top: 3px solid #e74c3c;
             margin: 20px auto;
         }
+        .samples, .details {
+            text-align: center;
+            margin: 20px auto;
+        }
         .samples img, .details img {
             width: 30%;
             margin: 0 1.5%;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .samples {
-            text-align: center;
-            margin: 20px 0;
-        }
-        .details {
-            text-align: center;
-            margin: 20px 0;
         }
         .rates {
             max-width: 800px;
@@ -96,6 +111,7 @@
                 float: none;
                 display: block;
                 text-align: left;
+                padding: 10px 15px;
             }
         }
     </style>
@@ -109,35 +125,38 @@
         <a href="#contact">Contact</a>
     </div>
 
-    <div style="text-align:center; margin: 20px 0;">
-        <img style="width: 100%; max-height: 400px; object-fit: cover; border-bottom: 4px solid #e74c3c;" src="1.png" alt="Banner Image">
+    <div class="container">
+        <div class="banner">
+            <img src="1.png" alt="Banner Image">
+        </div>
+
+        <h1 class="section-header">We Make CADD Plans at Lowest Rates</h1>
+
+        <h1 class="section-header">Here are Some Samples</h1>
+        <div class="samples">
+            <img src="rao2.png" alt="Sample 1">
+            <img src="2.webp" alt="Sample 2">
+            <img src="R.jpeg" alt="Sample 3">
+        </div>
+
+        <h1 class="section-header">Rates of Plans</h1>
+        <div class="rates">
+            <p>1. Ground Floor Plan - 40 Rupees</p>
+            <p>2. G+1 or G+2 Plan - 60 Rupees</p>
+            <p>3. Section of Any Plan - 20 Rupees</p>
+            <p>4. Center Line Plan - 20 Rupees</p>
+            <p>5. Front Elevation of Any Plan - 30 Rupees</p>
+        </div>
+
+        <h1 class="section-header">Provide Details Below to Create Plan</h1>
+        <div class="details">
+            <img src="OIP (1).jpeg" alt="Detail Image 1">
+            <img src="R (1).jpeg" alt="Detail Image 2">
+        </div>
+
+        <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAAWw4MMFURVJCUzJMUjRNNlBCSU5GQUM0MlZCTERQTC4u" class="form-link">Buy Now</a>
     </div>
-
-    <h1 class="section-header">We Make CADD Plans at Lowest Rates</h1>
-
-    <h1 class="section-header">Here are Some Samples</h1>
-    <div class="samples">
-        <img src="rao2.png" alt="Sample 1">
-        <img src="2.webp" alt="Sample 2">
-        <img src="R.jpeg" alt="Sample 3">
-    </div>
-
-    <h1 class="section-header">Rates of Plans</h1>
-    <div class="rates">
-        <p>1. Ground Floor Plan - 40 Rupees</p>
-        <p>2. G+1 or G+2 Plan - 60 Rupees</p>
-        <p>3. Section of Any Plan - 20 Rupees</p>
-        <p>4. Center Line Plan - 20 Rupees</p>
-        <p>5. Front Elevation of Any Plan - 30 Rupees</p>
-    </div>
-
-    <h1 class="section-header">Provide Details Below to Create Plan</h1>
-    <div class="details">
-        <img src="OIP (1).jpeg" alt="Detail Image 1">
-        <img src="R (1).jpeg" alt="Detail Image 2">
-    </div>
-
-    <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAAWw4MMFURVJCUzJMUjRNNlBCSU5GQUM0MlZCTERQTC4u" class="form-link">Buy Now</a>
 
 </body>
 </html>
+
